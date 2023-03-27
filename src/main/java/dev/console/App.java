@@ -1,5 +1,6 @@
 package dev.console;
 
+import dev.service.AppService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,5 +9,7 @@ public class App {
     public static void main(String[] args) {
         LOG.info("Bonjour Slf4J !");
         LOG.info("Implementation Logback");
+        AppService appService = new AppService();
+        appService.executer("Gio");
     }
 }
